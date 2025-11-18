@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Notas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Sistema de Notas</h1>
+    </header>
+
+    <section class="form-section">
+        <form id="form">
+            <label for="nome">Nome do Aluno:</label>
+            <input type="text" id="nome" placeholder="Digite o nome do aluno" required>
+
+            <label for="nota1">Nota 1:</label>
+            <input type="number" id="nota1" min="0" max="10" placeholder="Digite a primeira nota" required>
+
+            <label for="nota2">Nota 2:</label>
+            <input type="number" id="nota2" min="0" max="10" placeholder="Digite a segunda nota" required>
+
+            <button type="submit">Adicionar Aluno</button>
+        </form>
+    </section>
+
+    <section class="tabela-section">
+        <table id="tabela">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Nota 1</th>
+                    <th>Nota 2</th>
+                    <th>Média</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Linhas de registros serão adicionadas dinamicamente aqui -->
+            </tbody>
+        </table>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
